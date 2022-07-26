@@ -1,0 +1,979 @@
+{
+  "schemas": [
+    {
+      "schemaService": "a4b",
+      "schemaEventName": "RoomStateChange",
+      "schemaRelativeLocation": "a4b/RoomStateChange.json"
+    },
+    {
+      "schemaService": "acm",
+      "schemaEventName": "ACMCertificateApproachingExpiration",
+      "schemaRelativeLocation": "acm/ACMCertificateApproachingExpiration.json"
+    },
+    {
+      "schemaService": "applicationcostprofiler",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "applicationcostprofiler/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "applicationcostprofiler",
+      "schemaEventName": "ApplicationCostProfilerIngestionDataAccessFailure",
+      "schemaRelativeLocation": "applicationcostprofiler/ApplicationCostProfilerIngestionDataAccessFailure.json"
+    },
+    {
+      "schemaService": "applicationcostprofiler",
+      "schemaEventName": "ApplicationCostProfilerIngestionDataValidationFailure",
+      "schemaRelativeLocation": "applicationcostprofiler/ApplicationCostProfilerIngestionDataValidationFailure.json"
+    },
+    {
+      "schemaService": "applicationcostprofiler",
+      "schemaEventName": "ApplicationCostProfilerReportDeliveryFailure",
+      "schemaRelativeLocation": "applicationcostprofiler/ApplicationCostProfilerReportDeliveryFailure.json"
+    },
+    {
+      "schemaService": "applicationcostprofiler",
+      "schemaEventName": "ApplicationCostProfilerReportGenerated",
+      "schemaRelativeLocation": "applicationcostprofiler/ApplicationCostProfilerReportGenerated.json"
+    },
+    {
+      "schemaService": "athena",
+      "schemaEventName": "AthenaQueryStateChange",
+      "schemaRelativeLocation": "athena/AthenaQueryStateChange.json"
+    },
+    {
+      "schemaService": "autoscaling",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "autoscaling/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "autoscaling",
+      "schemaEventName": "EC2InstanceLaunchLifecycleAction",
+      "schemaRelativeLocation": "autoscaling/EC2InstanceLaunchLifecycleAction.json"
+    },
+    {
+      "schemaService": "autoscaling",
+      "schemaEventName": "EC2InstanceLaunchSuccessful",
+      "schemaRelativeLocation": "autoscaling/EC2InstanceLaunchSuccessful.json"
+    },
+    {
+      "schemaService": "autoscaling",
+      "schemaEventName": "EC2InstanceLaunchUnsuccessful",
+      "schemaRelativeLocation": "autoscaling/EC2InstanceLaunchUnsuccessful.json"
+    },
+    {
+      "schemaService": "autoscaling",
+      "schemaEventName": "EC2InstanceTerminateLifecycleAction",
+      "schemaRelativeLocation": "autoscaling/EC2InstanceTerminateLifecycleAction.json"
+    },
+    {
+      "schemaService": "autoscaling",
+      "schemaEventName": "EC2InstanceTerminateSuccessful",
+      "schemaRelativeLocation": "autoscaling/EC2InstanceTerminateSuccessful.json"
+    },
+    {
+      "schemaService": "autoscaling",
+      "schemaEventName": "EC2InstanceTerminateUnsuccessful",
+      "schemaRelativeLocation": "autoscaling/EC2InstanceTerminateUnsuccessful.json"
+    },
+    {
+      "schemaService": "batch",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "batch/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "batch",
+      "schemaEventName": "BatchJobStateChange",
+      "schemaRelativeLocation": "batch/BatchJobStateChange.json"
+    },
+    {
+      "schemaService": "chime",
+      "schemaEventName": "ChimeVoiceConnectorStreamingStatus",
+      "schemaRelativeLocation": "chime/ChimeVoiceConnectorStreamingStatus.json"
+    },
+    {
+      "schemaService": "cloudformation",
+      "schemaEventName": "CloudFormationHookInvocationProgress",
+      "schemaRelativeLocation": "cloudformation/CloudFormationHookInvocationProgress.json"
+    },
+    {
+      "schemaService": "cloudshell",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "cloudshell/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "cloudwatch",
+      "schemaEventName": "CloudWatchAlarmConfigurationChange",
+      "schemaRelativeLocation": "cloudwatch/CloudWatchAlarmConfigurationChange.json"
+    },
+    {
+      "schemaService": "cloudwatch",
+      "schemaEventName": "CloudWatchAlarmStateChange",
+      "schemaRelativeLocation": "cloudwatch/CloudWatchAlarmStateChange.json"
+    },
+    {
+      "schemaService": "codebuild",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "codebuild/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "codebuild",
+      "schemaEventName": "AWSServiceEventViaCloudTrail",
+      "schemaRelativeLocation": "codebuild/AWSServiceEventViaCloudTrail.json"
+    },
+    {
+      "schemaService": "codebuild",
+      "schemaEventName": "CodeBuildBuildPhaseChange",
+      "schemaRelativeLocation": "codebuild/CodeBuildBuildPhaseChange.json"
+    },
+    {
+      "schemaService": "codebuild",
+      "schemaEventName": "CodeBuildBuildStateChange",
+      "schemaRelativeLocation": "codebuild/CodeBuildBuildStateChange.json"
+    },
+    {
+      "schemaService": "codecommit",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "codecommit/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "codecommit",
+      "schemaEventName": "CodeCommitApprovalRuleTemplateChange",
+      "schemaRelativeLocation": "codecommit/CodeCommitApprovalRuleTemplateChange.json"
+    },
+    {
+      "schemaService": "codecommit",
+      "schemaEventName": "CodeCommitCommentOnCommit",
+      "schemaRelativeLocation": "codecommit/CodeCommitCommentOnCommit.json"
+    },
+    {
+      "schemaService": "codecommit",
+      "schemaEventName": "CodeCommitCommentOnPullRequest",
+      "schemaRelativeLocation": "codecommit/CodeCommitCommentOnPullRequest.json"
+    },
+    {
+      "schemaService": "codecommit",
+      "schemaEventName": "CodeCommitPullRequestStateChange",
+      "schemaRelativeLocation": "codecommit/CodeCommitPullRequestStateChange.json"
+    },
+    {
+      "schemaService": "codecommit",
+      "schemaEventName": "CodeCommitRepositoryStateChange",
+      "schemaRelativeLocation": "codecommit/CodeCommitRepositoryStateChange.json"
+    },
+    {
+      "schemaService": "codedeploy",
+      "schemaEventName": "CodeDeployDeploymentStateChangeNotification",
+      "schemaRelativeLocation": "codedeploy/CodeDeployDeploymentStateChangeNotification.json"
+    },
+    {
+      "schemaService": "codedeploy",
+      "schemaEventName": "CodeDeployInstanceStateChangeNotification",
+      "schemaRelativeLocation": "codedeploy/CodeDeployInstanceStateChangeNotification.json"
+    },
+    {
+      "schemaService": "codeguruprofiler",
+      "schemaEventName": "CodeGuruProfilerRecommendationStateChange",
+      "schemaRelativeLocation": "codeguruprofiler/CodeGuruProfilerRecommendationStateChange.json"
+    },
+    {
+      "schemaService": "codepipeline",
+      "schemaEventName": "CodePipelineActionExecutionStateChange",
+      "schemaRelativeLocation": "codepipeline/CodePipelineActionExecutionStateChange.json"
+    },
+    {
+      "schemaService": "codepipeline",
+      "schemaEventName": "CodePipelinePipelineExecutionStateChange",
+      "schemaRelativeLocation": "codepipeline/CodePipelinePipelineExecutionStateChange.json"
+    },
+    {
+      "schemaService": "codepipeline",
+      "schemaEventName": "CodePipelineStageExecutionStateChange",
+      "schemaRelativeLocation": "codepipeline/CodePipelineStageExecutionStateChange.json"
+    },
+    {
+      "schemaService": "connect",
+      "schemaEventName": "CodeConnectContact",
+      "schemaRelativeLocation": "connect/CodeConnectContact.json"
+    },
+    {
+      "schemaService": "connect",
+      "schemaEventName": "ContactLensPostCallRulesMatched",
+      "schemaRelativeLocation": "connect/ContactLensPostCallRulesMatched.json"
+    },
+    {
+      "schemaService": "connect",
+      "schemaEventName": "ContactLensRealtimeRulesMatched",
+      "schemaRelativeLocation": "connect/ContactLensRealtimeRulesMatched.json"
+    },
+    {
+      "schemaService": "datasync",
+      "schemaEventName": "DataSyncAgentStateChange",
+      "schemaRelativeLocation": "datasync/DataSyncAgentStateChange.json"
+    },
+    {
+      "schemaService": "datasync",
+      "schemaEventName": "DataSyncLocationStateChange",
+      "schemaRelativeLocation": "datasync/DataSyncLocationStateChange.json"
+    },
+    {
+      "schemaService": "datasync",
+      "schemaEventName": "DataSyncTaskExecutionStateChange",
+      "schemaRelativeLocation": "datasync/DataSyncTaskExecutionStateChange.json"
+    },
+    {
+      "schemaService": "datasync",
+      "schemaEventName": "DataSyncTaskStateChange",
+      "schemaRelativeLocation": "datasync/DataSyncTaskStateChange.json"
+    },
+    {
+      "schemaService": "devopsguru",
+      "schemaEventName": "DevOpsGuruInsightClosed",
+      "schemaRelativeLocation": "devopsguru/DevOpsGuruInsightClosed.json"
+    },
+    {
+      "schemaService": "devopsguru",
+      "schemaEventName": "DevOpsGuruInsightSeverityUpgraded",
+      "schemaRelativeLocation": "devopsguru/DevOpsGuruInsightSeverityUpgraded.json"
+    },
+    {
+      "schemaService": "devopsguru",
+      "schemaEventName": "DevOpsGuruNewAnomalyAssociation",
+      "schemaRelativeLocation": "devopsguru/DevOpsGuruNewAnomalyAssociation.json"
+    },
+    {
+      "schemaService": "devopsguru",
+      "schemaEventName": "DevOpsGuruNewInsightOpen",
+      "schemaRelativeLocation": "devopsguru/DevOpsGuruNewInsightOpen.json"
+    },
+    {
+      "schemaService": "devopsguru",
+      "schemaEventName": "DevOpsGuruNewRecommendationCreated",
+      "schemaRelativeLocation": "devopsguru/DevOpsGuruNewRecommendationCreated.json"
+    },
+    {
+      "schemaService": "dlm",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "dlm/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "dlm",
+      "schemaEventName": "DLMPolicyStateChange",
+      "schemaRelativeLocation": "dlm/DLMPolicyStateChange.json"
+    },
+    {
+      "schemaService": "ec2",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "ec2/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "ec2",
+      "schemaEventName": "EBSMultiVolumeSnapshotsCompletionStatus",
+      "schemaRelativeLocation": "ec2/EBSMultiVolumeSnapshotsCompletionStatus.json"
+    },
+    {
+      "schemaService": "ec2",
+      "schemaEventName": "EBSSnapshotNotification",
+      "schemaRelativeLocation": "ec2/EBSSnapshotNotification.json"
+    },
+    {
+      "schemaService": "ec2",
+      "schemaEventName": "EBSVolumeNotification",
+      "schemaRelativeLocation": "ec2/EBSVolumeNotification.json"
+    },
+    {
+      "schemaService": "ec2",
+      "schemaEventName": "EC2InstanceStateChangeNotification",
+      "schemaRelativeLocation": "ec2/EC2InstanceStateChangeNotification.json"
+    },
+    {
+      "schemaService": "ec2",
+      "schemaEventName": "EC2SpotInstanceInterruptionWarning",
+      "schemaRelativeLocation": "ec2/EC2SpotInstanceInterruptionWarning.json"
+    },
+    {
+      "schemaService": "ec2fleet",
+      "schemaEventName": "EC2FleetError",
+      "schemaRelativeLocation": "ec2fleet/EC2FleetError.json"
+    },
+    {
+      "schemaService": "ec2fleet",
+      "schemaEventName": "EC2FleetInformation",
+      "schemaRelativeLocation": "ec2fleet/EC2FleetInformation.json"
+    },
+    {
+      "schemaService": "ec2fleet",
+      "schemaEventName": "EC2FleetInstanceChange",
+      "schemaRelativeLocation": "ec2fleet/EC2FleetInstanceChange.json"
+    },
+    {
+      "schemaService": "ec2fleet",
+      "schemaEventName": "EC2FleetSpotInstanceRequestChange",
+      "schemaRelativeLocation": "ec2fleet/EC2FleetSpotInstanceRequestChange.json"
+    },
+    {
+      "schemaService": "ec2fleet",
+      "schemaEventName": "EC2FleetStateChange",
+      "schemaRelativeLocation": "ec2fleet/EC2FleetStateChange.json"
+    },
+    {
+      "schemaService": "ec2spotfleet",
+      "schemaEventName": "EC2SpotFleetError",
+      "schemaRelativeLocation": "ec2spotfleet/EC2SpotFleetError.json"
+    },
+    {
+      "schemaService": "ec2spotfleet",
+      "schemaEventName": "EC2SpotFleetInformation",
+      "schemaRelativeLocation": "ec2spotfleet/EC2SpotFleetInformation.json"
+    },
+    {
+      "schemaService": "ec2spotfleet",
+      "schemaEventName": "EC2SpotFleetInstanceChange",
+      "schemaRelativeLocation": "ec2spotfleet/EC2SpotFleetInstanceChange.json"
+    },
+    {
+      "schemaService": "ec2spotfleet",
+      "schemaEventName": "EC2SpotFleetSpotInstanceRequestChange",
+      "schemaRelativeLocation": "ec2spotfleet/EC2SpotFleetSpotInstanceRequestChange.json"
+    },
+    {
+      "schemaService": "ec2spotfleet",
+      "schemaEventName": "EC2SpotFleetStateChange",
+      "schemaRelativeLocation": "ec2spotfleet/EC2SpotFleetStateChange.json"
+    },
+    {
+      "schemaService": "ecr",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "ecr/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "ecr",
+      "schemaEventName": "ECRImageAction",
+      "schemaRelativeLocation": "ecr/ECRImageAction.json"
+    },
+    {
+      "schemaService": "ecr",
+      "schemaEventName": "ECRImageScan",
+      "schemaRelativeLocation": "ecr/ECRImageScan.json"
+    },
+    {
+      "schemaService": "ecs",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "ecs/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "ecs",
+      "schemaEventName": "ECSContainerInstanceStateChange",
+      "schemaRelativeLocation": "ecs/ECSContainerInstanceStateChange.json"
+    },
+    {
+      "schemaService": "ecs",
+      "schemaEventName": "ECSServiceAction",
+      "schemaRelativeLocation": "ecs/ECSServiceAction.json"
+    },
+    {
+      "schemaService": "ecs",
+      "schemaEventName": "ECSTaskStateChange",
+      "schemaRelativeLocation": "ecs/ECSTaskStateChange.json"
+    },
+    {
+      "schemaService": "elasticloadbalancing",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "elasticloadbalancing/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "emr",
+      "schemaEventName": "EMRAutoScalingPolicyStateChange",
+      "schemaRelativeLocation": "emr/EMRAutoScalingPolicyStateChange.json"
+    },
+    {
+      "schemaService": "emr",
+      "schemaEventName": "EMRClusterStateChange",
+      "schemaRelativeLocation": "emr/EMRClusterStateChange.json"
+    },
+    {
+      "schemaService": "emr",
+      "schemaEventName": "EMRConfigurationError",
+      "schemaRelativeLocation": "emr/EMRConfigurationError.json"
+    },
+    {
+      "schemaService": "emr",
+      "schemaEventName": "EMRInstanceFleetStateChange",
+      "schemaRelativeLocation": "emr/EMRInstanceFleetStateChange.json"
+    },
+    {
+      "schemaService": "emr",
+      "schemaEventName": "EMRInstanceGroupStateChange",
+      "schemaRelativeLocation": "emr/EMRInstanceGroupStateChange.json"
+    },
+    {
+      "schemaService": "emr",
+      "schemaEventName": "EMRInstanceGroupStatusNotification",
+      "schemaRelativeLocation": "emr/EMRInstanceGroupStatusNotification.json"
+    },
+    {
+      "schemaService": "emr",
+      "schemaEventName": "EMRStepStatusChange",
+      "schemaRelativeLocation": "emr/EMRStepStatusChange.json"
+    },
+    {
+      "schemaService": "events",
+      "schemaEventName": "ScheduledJson",
+      "schemaRelativeLocation": "events/ScheduledJson.json"
+    },
+    {
+      "schemaService": "fis",
+      "schemaEventName": "FISExperimentStateChange",
+      "schemaRelativeLocation": "fis/FISExperimentStateChange.json"
+    },
+    {
+      "schemaService": "gamelift",
+      "schemaEventName": "GameLiftMatchmakingEvent",
+      "schemaRelativeLocation": "gamelift/GameLiftMatchmakingEvent.json"
+    },
+    {
+      "schemaService": "gamelift",
+      "schemaEventName": "GameLiftQueuePlacementEvent",
+      "schemaRelativeLocation": "gamelift/GameLiftQueuePlacementEvent.json"
+    },
+    {
+      "schemaService": "geo",
+      "schemaEventName": "LocationGeofenceEvent",
+      "schemaRelativeLocation": "geo/LocationGeofenceEvent.json"
+    },
+    {
+      "schemaService": "glue",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "glue/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "glue",
+      "schemaEventName": "GlueDataCatalogDatabaseStateChange",
+      "schemaRelativeLocation": "glue/GlueDataCatalogDatabaseStateChange.json"
+    },
+    {
+      "schemaService": "glue",
+      "schemaEventName": "GlueDataCatalogTableStateChange",
+      "schemaRelativeLocation": "glue/GlueDataCatalogTableStateChange.json"
+    },
+    {
+      "schemaService": "glue",
+      "schemaEventName": "GlueJobRunStatus",
+      "schemaRelativeLocation": "glue/GlueJobRunStatus.json"
+    },
+    {
+      "schemaService": "glue",
+      "schemaEventName": "GlueJobStateChange",
+      "schemaRelativeLocation": "glue/GlueJobStateChange.json"
+    },
+    {
+      "schemaService": "health",
+      "schemaEventName": "AWSHealthAbuseEvent",
+      "schemaRelativeLocation": "health/AWSHealthAbuseEvent.json"
+    },
+    {
+      "schemaService": "health",
+      "schemaEventName": "AWSHealthEvent",
+      "schemaRelativeLocation": "health/AWSHealthEvent.json"
+    },
+    {
+      "schemaService": "iotanalytics",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "iotanalytics/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "iotanalytics",
+      "schemaEventName": "IoTAnalyticsDataSetLifeCycleNotification",
+      "schemaRelativeLocation": "iotanalytics/IoTAnalyticsDataSetLifeCycleNotification.json"
+    },
+    {
+      "schemaService": "ivs",
+      "schemaEventName": "LimitBreach",
+      "schemaRelativeLocation": "ivs/LimitBreach.json"
+    },
+    {
+      "schemaService": "ivs",
+      "schemaEventName": "RecordingStateChange",
+      "schemaRelativeLocation": "ivs/RecordingStateChange.json"
+    },
+    {
+      "schemaService": "ivs",
+      "schemaEventName": "StreamHealthChange",
+      "schemaRelativeLocation": "ivs/StreamHealthChange.json"
+    },
+    {
+      "schemaService": "ivs",
+      "schemaEventName": "StreamStateChange",
+      "schemaRelativeLocation": "ivs/StreamStateChange.json"
+    },
+    {
+      "schemaService": "kms",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "kms/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "kms",
+      "schemaEventName": "KMSCMKDeletion",
+      "schemaRelativeLocation": "kms/KMSCMKDeletion.json"
+    },
+    {
+      "schemaService": "kms",
+      "schemaEventName": "KMSCMKRotation",
+      "schemaRelativeLocation": "kms/KMSCMKRotation.json"
+    },
+    {
+      "schemaService": "kms",
+      "schemaEventName": "KMSImportedKeyMaterialExpiration",
+      "schemaRelativeLocation": "kms/KMSImportedKeyMaterialExpiration.json"
+    },
+    {
+      "schemaService": "logs",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "logs/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "macie",
+      "schemaEventName": "MacieAlert",
+      "schemaRelativeLocation": "macie/MacieAlert.json"
+    },
+    {
+      "schemaService": "managedblockchain",
+      "schemaEventName": "ManagedBlockchainInvitationStatusChange",
+      "schemaRelativeLocation": "managedblockchain/ManagedBlockchainInvitationStatusChange.json"
+    },
+    {
+      "schemaService": "managedblockchain",
+      "schemaEventName": "ManagedBlockchainProposalStatusChange",
+      "schemaRelativeLocation": "managedblockchain/ManagedBlockchainProposalStatusChange.json"
+    },
+    {
+      "schemaService": "medialive",
+      "schemaEventName": "MediaLiveChannelAlert",
+      "schemaRelativeLocation": "medialive/MediaLiveChannelAlert.json"
+    },
+    {
+      "schemaService": "medialive",
+      "schemaEventName": "MediaLiveChannelInputChange",
+      "schemaRelativeLocation": "medialive/MediaLiveChannelInputChange.json"
+    },
+    {
+      "schemaService": "medialive",
+      "schemaEventName": "MediaLiveChannelStateChange",
+      "schemaRelativeLocation": "medialive/MediaLiveChannelStateChange.json"
+    },
+    {
+      "schemaService": "medialive",
+      "schemaEventName": "MediaLiveMultiplexAlert",
+      "schemaRelativeLocation": "medialive/MediaLiveMultiplexAlert.json"
+    },
+    {
+      "schemaService": "medialive",
+      "schemaEventName": "MediaLiveMultiplexStateChange",
+      "schemaRelativeLocation": "medialive/MediaLiveMultiplexStateChange.json"
+    },
+    {
+      "schemaService": "mediapackage",
+      "schemaEventName": "MediaPackageHarvestJobNotification",
+      "schemaRelativeLocation": "mediapackage/MediaPackageHarvestJobNotification.json"
+    },
+    {
+      "schemaService": "mediapackage",
+      "schemaEventName": "MediaPackageInputNotification",
+      "schemaRelativeLocation": "mediapackage/MediaPackageInputNotification.json"
+    },
+    {
+      "schemaService": "mediapackage",
+      "schemaEventName": "MediaPackageKeyProviderNotification",
+      "schemaRelativeLocation": "mediapackage/MediaPackageKeyProviderNotification.json"
+    },
+    {
+      "schemaService": "mgn",
+      "schemaEventName": "MGNSourceServerDataReplicationStalledChange",
+      "schemaRelativeLocation": "mgn/MGNSourceServerDataReplicationStalledChange.json"
+    },
+    {
+      "schemaService": "mgn",
+      "schemaEventName": "MGNSourceServerLaunchResult",
+      "schemaRelativeLocation": "mgn/MGNSourceServerLaunchResult.json"
+    },
+    {
+      "schemaService": "mgn",
+      "schemaEventName": "MGNSourceServerLifecycleStateChange",
+      "schemaRelativeLocation": "mgn/MGNSourceServerLifecycleStateChange.json"
+    },
+    {
+      "schemaService": "monitoring",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "monitoring/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "opsworks",
+      "schemaEventName": "OpsWorksAlert",
+      "schemaRelativeLocation": "opsworks/OpsWorksAlert.json"
+    },
+    {
+      "schemaService": "opsworks",
+      "schemaEventName": "OpsWorksCommandStateChange",
+      "schemaRelativeLocation": "opsworks/OpsWorksCommandStateChange.json"
+    },
+    {
+      "schemaService": "opsworks",
+      "schemaEventName": "OpsWorksDeploymentStateChange",
+      "schemaRelativeLocation": "opsworks/OpsWorksDeploymentStateChange.json"
+    },
+    {
+      "schemaService": "opsworks",
+      "schemaEventName": "OpsWorksInstanceStateChange",
+      "schemaRelativeLocation": "opsworks/OpsWorksInstanceStateChange.json"
+    },
+    {
+      "schemaService": "organizations",
+      "schemaEventName": "AWSServiceEventViaCloudTrail",
+      "schemaRelativeLocation": "organizations/AWSServiceEventViaCloudTrail.json"
+    },
+    {
+      "schemaService": "qldb",
+      "schemaEventName": "QLDBLedgerStateChange",
+      "schemaRelativeLocation": "qldb/QLDBLedgerStateChange.json"
+    },
+    {
+      "schemaService": "rds",
+      "schemaEventName": "RDSDBClusterEvent",
+      "schemaRelativeLocation": "rds/RDSDBClusterEvent.json"
+    },
+    {
+      "schemaService": "rds",
+      "schemaEventName": "RDSDBClusterSnapshotEvent",
+      "schemaRelativeLocation": "rds/RDSDBClusterSnapshotEvent.json"
+    },
+    {
+      "schemaService": "rds",
+      "schemaEventName": "RDSDBInstanceEvent",
+      "schemaRelativeLocation": "rds/RDSDBInstanceEvent.json"
+    },
+    {
+      "schemaService": "rds",
+      "schemaEventName": "RDSDBParameterGroupEvent",
+      "schemaRelativeLocation": "rds/RDSDBParameterGroupEvent.json"
+    },
+    {
+      "schemaService": "rds",
+      "schemaEventName": "RDSDBSecurityGroupEvent",
+      "schemaRelativeLocation": "rds/RDSDBSecurityGroupEvent.json"
+    },
+    {
+      "schemaService": "rds",
+      "schemaEventName": "RDSDBSnapshotEvent",
+      "schemaRelativeLocation": "rds/RDSDBSnapshotEvent.json"
+    },
+    {
+      "schemaService": "redshiftdata",
+      "schemaEventName": "RedshiftDataStatementStatusChangeEvent",
+      "schemaRelativeLocation": "redshiftdata/RedshiftDataStatementStatusChangeEvent.json"
+    },
+    {
+      "schemaService": "route53recoveryreadiness",
+      "schemaEventName": "Route53ApplicationRecoveryControllerCellReadinessStatusChange",
+      "schemaRelativeLocation": "route53recoveryreadiness/Route53ApplicationRecoveryControllerCellReadinessStatusChange.json"
+    },
+    {
+      "schemaService": "route53recoveryreadiness",
+      "schemaEventName": "Route53ApplicationRecoveryControllerReadinessCheckStatusChange",
+      "schemaRelativeLocation": "route53recoveryreadiness/Route53ApplicationRecoveryControllerReadinessCheckStatusChange.json"
+    },
+    {
+      "schemaService": "route53recoveryreadiness",
+      "schemaEventName": "Route53ApplicationRecoveryControllerRecoveryGroupReadinessStatusChange",
+      "schemaRelativeLocation": "route53recoveryreadiness/Route53ApplicationRecoveryControllerRecoveryGroupReadinessStatusChange.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "s3/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectACLUpdated",
+      "schemaRelativeLocation": "s3/ObjectACLUpdated.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectAccessTierChanged",
+      "schemaRelativeLocation": "s3/ObjectAccessTierChanged.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectCreated",
+      "schemaRelativeLocation": "s3/ObjectCreated.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectDeleted",
+      "schemaRelativeLocation": "s3/ObjectDeleted.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectRestoreCompleted",
+      "schemaRelativeLocation": "s3/ObjectRestoreCompleted.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectRestoreExpired",
+      "schemaRelativeLocation": "s3/ObjectRestoreExpired.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectRestoreInitiated",
+      "schemaRelativeLocation": "s3/ObjectRestoreInitiated.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectStorageClassChanged",
+      "schemaRelativeLocation": "s3/ObjectStorageClassChanged.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectTagsAdded",
+      "schemaRelativeLocation": "s3/ObjectTagsAdded.json"
+    },
+    {
+      "schemaService": "s3",
+      "schemaEventName": "ObjectTagsDeleted",
+      "schemaRelativeLocation": "s3/ObjectTagsDeleted.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "sagemaker/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerAlgorithmStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerAlgorithmStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerEndpointConfigStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerEndpointConfigStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerEndpointStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerEndpointStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerHyperParameterTuningJobStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerHyperParameterTuningJobStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerModelBuildingPipelineExecutionStatusChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerModelBuildingPipelineExecutionStatusChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerModelBuildingPipelineExecutionStepStatusChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerModelBuildingPipelineExecutionStepStatusChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerModelPackageStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerModelPackageStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerModelStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerModelStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerNotebookInstanceStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerNotebookInstanceStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerNotebookLifecycleConfigStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerNotebookLifecycleConfigStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerTrainingJobStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerTrainingJobStateChange.json"
+    },
+    {
+      "schemaService": "sagemaker",
+      "schemaEventName": "SageMakerTransformJobStateChange",
+      "schemaRelativeLocation": "sagemaker/SageMakerTransformJobStateChange.json"
+    },
+    {
+      "schemaService": "schemas",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "schemas/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "schemas",
+      "schemaEventName": "SchemaCreated",
+      "schemaRelativeLocation": "schemas/SchemaCreated.json"
+    },
+    {
+      "schemaService": "schemas",
+      "schemaEventName": "SchemaVersionCreated",
+      "schemaRelativeLocation": "schemas/SchemaVersionCreated.json"
+    },
+    {
+      "schemaService": "securityhub",
+      "schemaEventName": "SecurityHubFindingsCustomAction",
+      "schemaRelativeLocation": "securityhub/SecurityHubFindingsCustomAction.json"
+    },
+    {
+      "schemaService": "securityhub",
+      "schemaEventName": "SecurityHubFindingsImported",
+      "schemaRelativeLocation": "securityhub/SecurityHubFindingsImported.json"
+    },
+    {
+      "schemaService": "securityhub",
+      "schemaEventName": "SecurityHubInsightResults",
+      "schemaRelativeLocation": "securityhub/SecurityHubInsightResults.json"
+    },
+    {
+      "schemaService": "signin",
+      "schemaEventName": "AWSConsoleSignInViaCloudTrail",
+      "schemaRelativeLocation": "signin/AWSConsoleSignInViaCloudTrail.json"
+    },
+    {
+      "schemaService": "ssm",
+      "schemaEventName": "CalendarStateChange",
+      "schemaRelativeLocation": "ssm/CalendarStateChange.json"
+    },
+    {
+      "schemaService": "states",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "states/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "states",
+      "schemaEventName": "StepFunctionsExecutionStatusChange",
+      "schemaRelativeLocation": "states/StepFunctionsExecutionStatusChange.json"
+    },
+    {
+      "schemaService": "storagegateway",
+      "schemaEventName": "StorageGatewayFileUploadEvent",
+      "schemaRelativeLocation": "storagegateway/StorageGatewayFileUploadEvent.json"
+    },
+    {
+      "schemaService": "storagegateway",
+      "schemaEventName": "StorageGatewayObjectUploadEvent",
+      "schemaRelativeLocation": "storagegateway/StorageGatewayObjectUploadEvent.json"
+    },
+    {
+      "schemaService": "storagegateway",
+      "schemaEventName": "StorageGatewayRefreshCacheEvent",
+      "schemaRelativeLocation": "storagegateway/StorageGatewayRefreshCacheEvent.json"
+    },
+    {
+      "schemaService": "swf",
+      "schemaEventName": "SimpleWorkflowExecutionStateChange",
+      "schemaRelativeLocation": "swf/SimpleWorkflowExecutionStateChange.json"
+    },
+    {
+      "schemaService": "synthetics",
+      "schemaEventName": "SyntheticsCanaryStatusChange",
+      "schemaRelativeLocation": "synthetics/SyntheticsCanaryStatusChange.json"
+    },
+    {
+      "schemaService": "synthetics",
+      "schemaEventName": "SyntheticsCanaryTestRunFailure",
+      "schemaRelativeLocation": "synthetics/SyntheticsCanaryTestRunFailure.json"
+    },
+    {
+      "schemaService": "synthetics",
+      "schemaEventName": "SyntheticsCanaryTestRunSuccessful",
+      "schemaRelativeLocation": "synthetics/SyntheticsCanaryTestRunSuccessful.json"
+    },
+    {
+      "schemaService": "tag",
+      "schemaEventName": "TagChangeOnResource",
+      "schemaRelativeLocation": "tag/TagChangeOnResource.json"
+    },
+    {
+      "schemaService": "transcribe",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "transcribe/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "transcribe",
+      "schemaEventName": "TranscribeJobStateChange",
+      "schemaRelativeLocation": "transcribe/TranscribeJobStateChange.json"
+    },
+    {
+      "schemaService": "translate",
+      "schemaEventName": "TranslateParallelDataStateChange",
+      "schemaRelativeLocation": "translate/TranslateParallelDataStateChange.json"
+    },
+    {
+      "schemaService": "translate",
+      "schemaEventName": "TranslateTextTranslationJobStateChange",
+      "schemaRelativeLocation": "translate/TranslateTextTranslationJobStateChange.json"
+    },
+    {
+      "schemaService": "trustedadvisor",
+      "schemaEventName": "TrustedAdvisorCheckItemRefreshNotification",
+      "schemaRelativeLocation": "trustedadvisor/TrustedAdvisorCheckItemRefreshNotification.json"
+    },
+    {
+      "schemaService": "voiceid",
+      "schemaEventName": "VoiceIdBatchFraudsterRegistrationAction",
+      "schemaRelativeLocation": "voiceid/VoiceIdBatchFraudsterRegistrationAction.json"
+    },
+    {
+      "schemaService": "voiceid",
+      "schemaEventName": "VoiceIdBatchSpeakerEnrollmentAction",
+      "schemaRelativeLocation": "voiceid/VoiceIdBatchSpeakerEnrollmentAction.json"
+    },
+    {
+      "schemaService": "voiceid",
+      "schemaEventName": "VoiceIdEvaluateSessionAction",
+      "schemaRelativeLocation": "voiceid/VoiceIdEvaluateSessionAction.json"
+    },
+    {
+      "schemaService": "voiceid",
+      "schemaEventName": "VoiceIdFraudsterAction",
+      "schemaRelativeLocation": "voiceid/VoiceIdFraudsterAction.json"
+    },
+    {
+      "schemaService": "voiceid",
+      "schemaEventName": "VoiceIdSessionSpeakerEnrollmentAction",
+      "schemaRelativeLocation": "voiceid/VoiceIdSessionSpeakerEnrollmentAction.json"
+    },
+    {
+      "schemaService": "voiceid",
+      "schemaEventName": "VoiceIdSpeakerAction",
+      "schemaRelativeLocation": "voiceid/VoiceIdSpeakerAction.json"
+    },
+    {
+      "schemaService": "voiceid",
+      "schemaEventName": "VoiceIdStartSessionAction",
+      "schemaRelativeLocation": "voiceid/VoiceIdStartSessionAction.json"
+    },
+    {
+      "schemaService": "voiceid",
+      "schemaEventName": "VoiceIdUpdateSessionAction",
+      "schemaRelativeLocation": "voiceid/VoiceIdUpdateSessionAction.json"
+    },
+    {
+      "schemaService": "wellarchitected",
+      "schemaEventName": "AWSAPICallViaCloudTrail",
+      "schemaRelativeLocation": "wellarchitected/AWSAPICallViaCloudTrail.json"
+    },
+    {
+      "schemaService": "workspaces",
+      "schemaEventName": "WorkSpacesAccess",
+      "schemaRelativeLocation": "workspaces/WorkSpacesAccess.json"
+    },
+    {
+      "schemaService": "xray",
+      "schemaEventName": "AWSXRayInsightUpdate",
+      "schemaRelativeLocation": "xray/AWSXRayInsightUpdate.json"
+    }
+  ]
+}

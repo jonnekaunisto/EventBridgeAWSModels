@@ -1,0 +1,144 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "DevOpsGuruInsightSeverityUpgraded"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "AWSEvent": {
+        "type": "object",
+        "required": [
+          "detail-type",
+          "resources",
+          "detail",
+          "id",
+          "source",
+          "time",
+          "region",
+          "version",
+          "account"
+        ],
+        "x-amazon-events-detail-type": "DevOps Guru Insight Severity Upgraded",
+        "x-amazon-events-source": "aws.devops-guru",
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/Detail"
+          },
+          "account": {
+            "type": "string"
+          },
+          "detail-type": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "resources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "version": {
+            "type": "string"
+          }
+        }
+      },
+      "Detail": {
+        "type": "object",
+        "required": [
+          "accountId",
+          "insightSeverity",
+          "messageType",
+          "insightId",
+          "insightType",
+          "region",
+          "resourceCollection"
+        ],
+        "properties": {
+          "accountId": {
+            "type": "string"
+          },
+          "insightId": {
+            "type": "string"
+          },
+          "insightSeverity": {
+            "type": "string"
+          },
+          "insightType": {
+            "type": "string"
+          },
+          "messageType": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "resourceCollection": {
+            "$ref": "#/components/schemas/ResourceCollection"
+          }
+        }
+      },
+      "ResourceCollection": {
+        "type": "object",
+        "properties": {
+          "cloudFormation": {
+            "$ref": "#/components/schemas/CloudFormation"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tag"
+            }
+          }
+        }
+      },
+      "CloudFormation": {
+        "type": "object",
+        "nullable": true,
+        "required": [
+          "stackNames"
+        ],
+        "properties": {
+          "stackNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Tag": {
+        "type": "object",
+        "nullable": true,
+        "required": [
+          "appBoundaryKey",
+          "tagValues"
+        ],
+        "properties": {
+          "appBoundaryKey": {
+            "type": "string"
+          },
+          "tagValues": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
